@@ -1,0 +1,158 @@
+namespace = amp_spaceport
+
+event = {
+	id = amp_spaceport.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = "gf_alphamodplus"
+	}
+}
+
+planet_event = {
+	id = amp_spaceport.1000
+	hide_window = yes
+
+	trigger = {
+		NOT = { has_spaceport = yes }
+		OR = {
+			has_planet_flag = spaceport_7
+			has_planet_flag = spaceport_8
+			has_planet_flag = spaceport_9
+			has_planet_flag = spaceport_10
+			has_planet_flag = spaceport_11
+		}
+	}
+
+	immediate = {
+		remove_planet_flag = spaceport_7
+		remove_planet_flag = spaceport_8
+		remove_planet_flag = spaceport_9
+		remove_planet_flag = spaceport_10
+		remove_planet_flag = spaceport_11
+	}
+}
+
+planet_event = {
+	id = amp_spaceport.7
+	hide_window = yes
+
+	trigger = {
+		has_spaceport = yes
+		is_spaceport_module_slot_free = 7
+		NOT = { has_spaceport_module = defence_upgrade_7 }
+		NOT = { has_spaceport_module = defence_upgrade_8 }
+		NOT = { has_spaceport_module = defence_upgrade_9 }
+		NOT = { has_spaceport_module = defence_upgrade_10 }
+		NOT = { has_spaceport_module = defence_upgrade_11 }
+		NOT = { has_planet_flag = spaceport_7 }
+		NOT = { has_planet_flag = spaceport_8 }
+		NOT = { has_planet_flag = spaceport_9 }
+		NOT = { has_planet_flag = spaceport_10 }
+		NOT = { has_planet_flag = spaceport_11 }
+	}
+
+	immediate = {
+		SET_SPACEPORT_MODULE = {
+			module = defence_upgrade_7
+			slot = 7
+		}
+		set_planet_flag = spaceport_7
+	}
+}
+
+planet_event = {
+	id = amp_spaceport.8
+	hide_window = yes
+
+	trigger = {
+		has_spaceport = yes
+		is_spaceport_module_slot_free = 8
+		has_spaceport_module = defence_upgrade_7
+		NOT = { has_spaceport_module = defence_upgrade_8 }
+		NOT = { has_spaceport_module = defence_upgrade_9 }
+		NOT = { has_spaceport_module = defence_upgrade_10 }
+		NOT = { has_spaceport_module = defence_upgrade_11 }
+		NOT = { has_planet_flag = spaceport_8 }
+		NOT = { has_planet_flag = spaceport_9 }
+		NOT = { has_planet_flag = spaceport_10 }
+		NOT = { has_planet_flag = spaceport_11 }
+	}
+
+	immediate = {
+		SET_SPACEPORT_MODULE = {
+			module = defence_upgrade_8
+			slot = 7
+		}
+		set_planet_flag = spaceport_8
+	}
+}
+
+planet_event = {
+	id = amp_spaceport.9
+	hide_window = yes
+
+	trigger = {
+		has_spaceport = yes
+		is_spaceport_module_slot_free = 9
+		has_spaceport_module = defence_upgrade_8
+		NOT = { has_spaceport_module = defence_upgrade_9 }
+		NOT = { has_spaceport_module = defence_upgrade_10 }
+		NOT = { has_spaceport_module = defence_upgrade_11 }
+		NOT = { has_planet_flag = spaceport_9 }
+		NOT = { has_planet_flag = spaceport_10 }
+		NOT = { has_planet_flag = spaceport_11 }
+	}
+
+	immediate = {
+		SET_SPACEPORT_MODULE = {
+			module = defence_upgrade_9
+			slot = 7
+		}
+		set_planet_flag = spaceport_9
+	}
+}
+
+planet_event = {
+	id = amp_spaceport.10
+	hide_window = yes
+
+	trigger = {
+		has_spaceport = yes
+		is_spaceport_module_slot_free = 10
+		has_spaceport_module = defence_upgrade_9
+		NOT = { has_spaceport_module = defence_upgrade_10 }
+		NOT = { has_spaceport_module = defence_upgrade_11 }
+		NOT = { has_planet_flag = spaceport_10 }
+		NOT = { has_planet_flag = spaceport_11 }
+	}
+
+	immediate = {
+		SET_SPACEPORT_MODULE = {
+			module = defence_upgrade_10
+			slot = 7
+		}
+		set_planet_flag = spaceport_10
+	}
+}
+
+planet_event = {
+	id = amp_spaceport.11
+	hide_window = yes
+
+	trigger = {
+		has_spaceport = yes
+		is_spaceport_module_slot_free = 11
+		has_spaceport_module = defence_upgrade_10
+		NOT = { has_spaceport_module = defence_upgrade_11 }
+		NOT = { has_planet_flag = spaceport_11 }
+	}
+
+	immediate = {
+		SET_SPACEPORT_MODULE = {
+			module = defence_upgrade_11
+			slot = 7
+		}
+		set_planet_flag = spaceport_11
+	}
+}

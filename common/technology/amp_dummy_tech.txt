@@ -1,0 +1,8 @@
+tech_spaceport_dummy = {
+	cost = 0
+	area = engineering
+	start_tech = no
+	category = { voidcraft }
+	tier = 0
+	weight = 0
+}
