@@ -18,11 +18,11 @@ planet_event = {
 		has_free_spaceport_module_slot = yes
 		switch = {
 			trigger = is_spaceport_module_slot_free
-			11 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value = 11 } } }
-			10 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value = 10 } } }
-			9 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value = 9 } } }
-			8 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value = 8 } } }
-			7 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value = 7 } } }
+			11 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value > 10 } } }
+			10 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value > 9 } } }
+			9 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value > 8 } } }
+			8 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value > 7 } } }
+			7 = { NOT = { check_variable = { which = "AlphaModSpaceportLevel" value > 6 } } }
 		}
 	}
 
