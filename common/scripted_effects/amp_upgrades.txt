@@ -1,0 +1,51 @@
+
+amp_remove_modifiers = {
+	set_variable = { which = "AlphaModSpaceportLevel" value = 0 }
+	remove_modifier = amp_spaceport_planet_7
+	remove_modifier = amp_spaceport_planet_8
+	remove_modifier = amp_spaceport_planet_9
+	remove_modifier = amp_spaceport_planet_10
+	remove_modifier = amp_spaceport_planet_11
+	if = {
+		limit = { exists = spaceport }
+		spaceport = {
+			random_owned_ship = {
+				remove_modifier = amp_spaceport_ship_7
+				remove_modifier = amp_spaceport_ship_8
+				remove_modifier = amp_spaceport_ship_9
+				remove_modifier = amp_spaceport_ship_10
+				remove_modifier = amp_spaceport_ship_11
+			}
+		}
+	}
+}
+
+amp_buff_7 = {
+	add_modifier = { modifier = amp_spaceport_planet_7 days = -1 }
+	spaceport = { random_owned_ship = { add_modifier = { modifier = amp_spaceport_ship_7 days = -1 } } }
+	set_variable = { which = "AlphaModSpaceportLevel" value = 7 }
+}
+
+amp_buff_8 = {
+	add_modifier = { modifier = amp_spaceport_planet_8 days = -1 }
+	spaceport = { random_owned_ship = { add_modifier = { modifier = amp_spaceport_ship_8 days = -1 } } }
+	set_variable = { which = "AlphaModSpaceportLevel" value = 8 }
+}
+
+amp_buff_9 = {
+	add_modifier = { modifier = amp_spaceport_planet_9 days = -1 }
+	spaceport = { random_owned_ship = { add_modifier = { modifier = amp_spaceport_ship_9 days = -1 } } }
+	set_variable = { which = "AlphaModSpaceportLevel" value = 9 }
+}
+
+amp_buff_10 = {
+	add_modifier = { modifier = amp_spaceport_planet_10 days = -1 }
+	spaceport = { random_owned_ship = { add_modifier = { modifier = amp_spaceport_ship_10 days = -1 } } }
+	set_variable = { which = "AlphaModSpaceportLevel" value = 10 }
+}
+
+amp_buff_11 = {
+	add_modifier = { modifier = amp_spaceport_planet_11 days = -1 }
+	spaceport = { random_owned_ship = { add_modifier = { modifier = amp_spaceport_ship_11 days = -1 } } }
+	set_variable = { which = "AlphaModSpaceportLevel" value = 11 }
+}

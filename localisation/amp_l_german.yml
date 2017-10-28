@@ -6,8 +6,16 @@ l_german:
 #l_polish:
 #l_russian:
 
-sm_defence_upgrade_7: "Defence Upgrade VII"
-sm_defence_upgrade_8: "Defence Upgrade VIII"
-sm_defence_upgrade_9: "Defence Upgrade IX"
-sm_defence_upgrade_10: "Defence Upgrade X"
-sm_defence_upgrade_11: "Defence Upgrade XI"
+amp_planet_desc: "The planets Spaceport level and bonuses."
+
+amp_spaceport_planet_7_desc: "$amp_planet_desc$"
+amp_spaceport_planet_8_desc: "$amp_planet_desc$"
+amp_spaceport_planet_9_desc: "$amp_planet_desc$"
+amp_spaceport_planet_10_desc: "$amp_planet_desc$"
+amp_spaceport_planet_11_desc: "$amp_planet_desc$"
+
+amp_spaceport_planet_7: "Defence Upgrade VII"
+amp_spaceport_planet_8: "Defence Upgrade VIII"
+amp_spaceport_planet_9: "Defence Upgrade IX"
+amp_spaceport_planet_10: "Defence Upgrade X"
+amp_spaceport_planet_11: "Defence Upgrade XI"

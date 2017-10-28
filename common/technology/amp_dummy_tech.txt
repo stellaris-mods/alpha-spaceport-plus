@@ -1,3 +1,5 @@
+
+# This is used by the autonomous-assembler fake spaceport module.
 tech_spaceport_dummy = {
 	cost = 0
 	area = engineering
