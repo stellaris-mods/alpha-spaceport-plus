@@ -32,7 +32,7 @@ guiTypes = {
 			# AMP
 			gridBoxType = {
 				name = "modules"
-				position = { x = 216 y = -26 }
+				position = { x = 215 y = -26 }
 				slotSize = { width = 54 height = 54 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 6
